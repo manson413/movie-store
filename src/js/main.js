@@ -7,4 +7,5 @@
 //= partials/slick.min.js
 //= partials/plyr.min.js
 //= partials/jquery.raty.js
+//= partials/masonry.pkgd.min.js
 //= partials/app.js

@@ -33,6 +33,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-close:before {
+  content: "\e90b";
+}
 .icon-9:before {
   content: "\e900";
 }
@@ -65,4 +68,13 @@
 }
 .icon-8:before {
   content: "\e90a";
+}
+.icon-spinner:before {
+  content: "\e97a";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-cross:before {
+  content: "\ea0f";
 }

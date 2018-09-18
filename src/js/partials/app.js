@@ -6,6 +6,29 @@ $(document).ready(function(){
         arrows: false
     });
 
+    //init video player
+    const player = new Plyr('#player', {});
+    //init rating
+    $('.rating').raty({
+        half: false,
+        starOff: 'img/star-clear.svg',
+        starOn: 'img/star-red.svg'
+    });
+
+    $('.movie-item.vertical .rating').raty({
+        half: false,
+        starOff: 'img/black-star.svg',
+        starOn: 'img/star-red.svg'
+    });
+
+    var container = $('.movies-wrapper');
+
+    container.masonry({
+        itemSelector: '.movie-item',
+        columnWidth: '.movie-item',
+        percentPosition: true
+    });
+    
     additions();
 });
 
@@ -19,12 +42,5 @@ function additions(){
         $('.banners-wrapper .director-name').eq(i-1).html($('.banner'+i).attr('data-name'));
     }
 
-    //init video player
-    const player = new Plyr('#player', {});
-    //init rating
-    $('.rating').raty({
-        half: false,
-        starOff: 'img/star-clear.svg',
-        starOn: 'img/star-red.svg'
-    });
+    
 }
